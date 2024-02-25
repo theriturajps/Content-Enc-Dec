@@ -1,0 +1,87 @@
+:focus { outline: none; }
+
+#container {
+	width: 100%;
+	padding: 12px;
+	margin: 0px auto 0px auto;
+	text-align: left;
+}
+
+/* Reset default browser styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  
+  #content {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  #content-right {
+	flex-grow: 1;
+	margin-left: 0;
+  }
+  
+  /* Apply styles to the forms */
+  form {
+	margin-bottom: 20px;
+  }
+  
+  /* Apply styles to headings */
+  h1, h3 {
+	margin-bottom: 10px;
+  }
+  
+  /* Apply styles to text inputs and textareas */
+  input[type="text"], textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	resize: vertical;
+  }
+  
+  /* Apply styles to buttons */
+  input[type="button"] {
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  input[type="button"]:hover {
+	background-color: #0056b3;
+  }
+  
+  /* Apply styles to radio buttons */
+  input[type="radio"] {
+	margin-right: 5px;
+  }
+  
+  /* Apply styles to the HTML test section */
+  #encryptedTest {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	min-height: 100px;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+	#content {
+	  flex-direction: column;
+	}
+	#content-right {
+	  margin-left: 0;
+	}
+	input[type="text"], textarea {
+	  width: calc(100% - 20px);
+	}
+  }
+  
